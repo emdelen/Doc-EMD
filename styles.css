@@ -87,6 +87,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    align-items: center;
 }
 
 .module {
@@ -96,20 +97,38 @@ body {
 }
 
 .card {
+    position: relative;
     padding: 2rem 1rem 2rem 1rem;
     transition: transform 1s ease;
 }
 
-.card.move {
+.cardInfo.move {
     transform: translateY(-11rem);
 }
 
 .btnInfoCard {
     border-style: none;
     background-color: transparent;
+    color: #3d87a8;
 }
 
-/**** JS ON CARD *****/
+
+.cardInfo {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+    width: 15rem;
+}
+
+.cardInfo.textAppear {
+    opacity: 1;
+    max-height: 400px;
+    color: black;
+}
+
+
+
 
 
 
